@@ -47,5 +47,58 @@ Methods:
 - getArea()
 - getPerimeter()
 
+## Create a Triangle class which inherits from Polygon. modify a method in a child class that it has inherited from the parent class:
 
+Properties:
 
+- a
+- b
+- c
+
+Methods:
+
+- getArea()
+- getPerimeter()
+
+## Create a Point class
+
+Properties:
+
+- x
+- y
+
+Methods:
+
+- distance_from_Xcoordinate()
+- distance_from_Ycoordinate()
+- getQuadrant()
+- on_Xcoordinate()
+- on_Ycoordinate()
+
+![coordinate](https://cdn.ttgtmedia.com/rms/onlineimages/x_and_y_coordinates_in_four_quadrants-h.png)
+
+## Create a Line class
+
+Properties:
+
+- x1
+- y1
+- x2
+- y2
+
+Methods:
+
+- get_length()
+
+![lenght](https://wumbo.net/formulas/distance-between-two-points-2d/main-450-250.svg)
+
+## Cirlce
+
+Properties:
+
+- r
+
+Methods:
+
+- getArea()()
+- getLength()
