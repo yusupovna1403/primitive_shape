@@ -1,3 +1,4 @@
+from math import fabs
 class Point:
     def __init__(self, x, y) -> None:
         self.x = x
@@ -12,7 +13,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return fabs(self.y)
 
     def distance_from_Ycoordinate(self):
         """
@@ -23,7 +24,7 @@ class Point:
         Returns:
             float or int: distance.
         """
-        pass
+        return fabs(self.x)
 
     def getQuadrant(self):
         """
@@ -34,7 +35,21 @@ class Point:
         Returns:
             int: quadrant.
         """
-        pass
+        if self.x > 0 and self.y > 0:
+            return 1
+        elif self.x < 0 and self.y > 0:
+            return 2
+        elif self.x < 0 and self.y < 0:
+            return 3
+        elif self.x > 0 and self.y < 0:
+            return 4
+        else:
+            if self.x == 0 and self.y != 0:
+                return "The point on the y coordinate"
+            if self.x != 0 and self.y == 0:
+                return "The point on the x coordinate" 
+        
+        
 
     def on_Xcoordinate(self):
         """
@@ -45,7 +60,11 @@ class Point:
         Returns:
             bool: result.
         """
-        pass
+        if self.x != 0 and self.y == 0:
+            return True
+        else:
+            return False
+        
 
     def on_Ycoordinate(self):
         """
@@ -56,5 +75,18 @@ class Point:
         Returns:
             bool: result.
         """
-        pass
+        if self.x == 0 and self.y != 0:
+            return True
+        else:
+            return False
+
+point = Point(x=0,y=-6)
+point1 = Point(x=-3,y=4)
+print(point.distance_from_Xcoordinate())
+print(point.distance_from_Ycoordinate())
+print(point.getQuadrant())
+print(point.on_Xcoordinate())
+print(point.on_Ycoordinate())
+print(point1.getQuadrant())
+
  
